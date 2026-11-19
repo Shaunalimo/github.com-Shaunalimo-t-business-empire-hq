@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111714" />
+  <meta name="description" content="T-Business Empire HQ — a command center for building, managing, and scaling a modern business empire." />
+  <title>T-Business Empire HQ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#" aria-label="Empire HQ home">
+      <span class="brand-mark">T</span>
+      <span>EMPIRE <b>HQ</b></span>
+    </a>
+    <nav class="side-nav" aria-label="Main navigation">
+      <a class="active" href="#overview"><span class="nav-icon">⌂</span><span>Overview</span></a>
+      <a href="#ventures"><span class="nav-icon">◇</span><span>Ventures</span></a>
+      <a href="#money"><span class="nav-icon">↗</span><span>Cash Flow</span></a>
+      <a href="#team"><span class="nav-icon">◎</span><span>Team</span></a>
+      <a href="#decisions"><span class="nav-icon">✓</span><span>Decisions</span></a>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="avatar">SL</div>
+      <div><strong>Shauna L.</strong><span>Founder</span></div>
+      <button aria-label="Account menu">•••</button>
+    </div>
+  </aside>
+
+  <main class="main-shell">
+    <header class="topbar">
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <div>
+        <span class="date-label" id="dateLabel">MONDAY, 19 NOVEMBER</span>
+        <h1>Good morning, Shauna.</h1>
+      </div>
+      <div class="top-actions">
+        <button class="icon-button" aria-label="Search">⌕</button>
+        <button class="icon-button notification" aria-label="Notifications">♢<i></i></button>
+        <button class="add-button" id="addAction">+ <span>Add action</span></button>
+      </div>
+    </header>
+
+    <section class="content" id="overview">
+      <div class="section-heading">
+        <div><span class="eyebrow">THE BIG PICTURE</span><h2>Empire Overview</h2></div>
+        <button class="period-button">This month <span>⌄</span></button>
+      </div>
+
+      <div class="metric-grid">
+        <article class="metric-card dark-card">
+          <div class="metric-top"><span>EMPIRE VALUE</span><span class="trend positive">↗ 12.4%</span></div>
+          <strong>$284,620</strong>
+          <div class="sparkline" aria-label="Empire value trend"><svg viewBox="0 0 250 58" role="img"><defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b8ef72" stop-opacity=".32"/><stop offset="1" stop-color="#b8ef72" stop-opacity="0"/></linearGradient></defs><path d="M2 49 C28 45,35 38,55 41 S82 48,102 34 S133 42,150 27 S178 35,196 18 S224 17,248 7 L248 58 L2 58 Z" fill="url(#area)"/><path d="M2 49 C28 45,35 38,55 41 S82 48,102 34 S133 42,150 27 S178 35,196 18 S224 17,248 7" fill="none" stroke="#b8ef72" stroke-width="2"/></svg></div>
+        </article>
+        <article class="metric-card"><div class="metric-top"><span>MONTHLY REVENUE</span><span class="trend positive">↗ 8.2%</span></div><strong>$48,320</strong><p>of $55,000 target</p><div class="progress"><i style="width:88%"></i></div></article>
+        <article class="metric-card"><div class="metric-top"><span>ACTIVE VENTURES</span><span class="trend neutral">3 growth</span></div><strong>6</strong><div class="venture-dots"><i></i><i></i><i></i><i></i><i></i><i></i></div><p>Across 4 industries</p></article>
+        <article class="metric-card"><div class="metric-top"><span>FOCUS SCORE</span><span class="trend positive">+7 pts</span></div><strong>82<span>/100</span></strong><div class="focus-ring"><i></i></div><p>Strong momentum</p></article>
+      </div>
+
+      <div class="dashboard-grid">
+        <article class="panel ventures-panel" id="ventures">
+          <div class="panel-header"><div><span class="eyebrow">YOUR PORTFOLIO</span><h3>Ventures</h3></div><a href="#">View all <span>↗</span></a></div>
+          <div class="venture-list">
+            <div class="venture-row"><div class="venture-logo lime">AB</div><div class="venture-name"><strong>Atlas Business</strong><span>Consulting</span></div><div class="venture-health"><span class="health-dot"></span> Healthy</div><div class="venture-revenue"><strong>$18.4k</strong><span>this month</span></div></div>
+            <div class="venture-row"><div class="venture-logo lilac">CS</div><div class="venture-name"><strong>Canvas Studio</strong><span>Creative agency</span></div><div class="venture-health"><span class="health-dot amber"></span> Watch</div><div class="venture-revenue"><strong>$12.8k</strong><span>this month</span></div></div>
+            <div class="venture-row"><div class="venture-logo peach">NB</div><div class="venture-name"><strong>Northstar Brands</strong><span>E-commerce</span></div><div class="venture-health"><span class="health-dot"></span> Healthy</div><div class="venture-revenue"><strong>$9.6k</strong><span>this month</span></div></div>
+          </div>
+        </article>
+
+        <article class="panel priorities-panel" id="decisions">
+          <div class="panel-header"><div><span class="eyebrow">THIS WEEK</span><h3>Top Priorities</h3></div><button class="more-button" aria-label="More options">•••</button></div>
+          <div class="priority-list">
+            <label><input type="checkbox"><span class="checkmark"></span><span class="priority-copy"><strong>Review Atlas quarterly plan</strong><small>Strategy · Today</small></span></label>
+            <label><input type="checkbox"><span class="checkmark"></span><span class="priority-copy"><strong>Approve campaign budget</strong><small>Northstar · Tomorrow</small></span></label>
+            <label><input type="checkbox"><span class="checkmark"></span><span class="priority-copy"><strong>Meet with creative leads</strong><small>Team · Friday</small></span></label>
+          </div>
+        </article>
+
+        <article class="panel cash-panel" id="money">
+          <div class="panel-header"><div><span class="eyebrow">CASH POSITION</span><h3>Money at a glance</h3></div><span class="trend positive">↗ 6.1%</span></div>
+          <div class="cash-content"><div><span>Available</span><strong>$126,840</strong></div><div class="cash-chart"><div class="cash-bar" style="--h:68%"></div><div class="cash-bar" style="--h:82%"></div><div class="cash-bar" style="--h:74%"></div><div class="cash-bar active" style="--h:92%"></div><div class="cash-bar" style="--h:86%"></div></div></div>
+        </article>
+
+        <article class="panel team-panel" id="team">
+          <div class="panel-header"><div><span class="eyebrow">TEAM</span><h3>Momentum</h3></div><a href="#">Open <span>↗</span></a></div>
+          <div class="team-content"><div class="avatar-stack"><i>AM</i><i>KT</i><i>JR</i><i>+4</i></div><div><strong>7 teammates</strong><span>3 decisions need your input</span></div></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="actionModal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <span class="eyebrow">NEW ITEM</span>
+      <h2 id="modalTitle">Add an action</h2>
+      <form id="actionForm">
+        <label>Action name<input type="text" required placeholder="What needs to happen?"></label>
+        <label>Category<select><option>Strategy</option><option>Operations</option><option>Finance</option><option>Team</option></select></label>
+        <button class="submit-button" type="submit">Add to priorities</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
